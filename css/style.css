@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Honk&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Cores */
+    --cor-primaria: #080808;
+    --cor-secundaria: #14ae5c;
+    --cor-branca: #fffdfd;
+    --cor-verde: #2c9c60;
+
+    /* Fontes */
+    --fonte-principal: 'Roboto', sans-serif;
+    --tamanho-fonte-base: 1rem;
+    --tamanho-fonte-h1: 1.5rem;
+    --tamanho-fonte-h2: 1.25rem;
+    /* Medidas */
+    --largura-container-mobile: 90%;
+    --largura-container-tablet: 80%;
+    --largura-container-desktop: 1200px;
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: var(--cor-branca);
+    border: 1px dashed red
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px #02542D;
+    &.verde{
+        background-color: var(--cor-secundaria);
+        &:hover {
+            background-color: var(--cor-verde);
+        }
+    }
+}
+
+.part {
+    width: 50%;
+    margin-left: 1rem;
+
+    
+}
+
+.nav{
+        display: flex;
+        justify-content: end;
+    }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bg-video {
+    object-fit: cover;
+    width: 100%;
+    height: 435px;
+    object-position: center 25%;
+    position: absolute;
+    z-index: -1;
+}
+
+.textonhover {
+    width: 50%;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center; 
+}
+
+.container {
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container h1 {
+    margin-top: 2%;
+    font-size: 2rem ;
+}
+
+.container p {
+    font-size: 1.5rem;
+    margin: 2%;
+}
+
+.buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px var(--cor-branca);
+    &.branco{
+        background-color: var(--cor-branca);
+        color: var(--cor-primaria);
+    }
+}
